@@ -310,7 +310,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226720257}
-  m_LocalRotation: {x: 0.12045591, y: 0.000000018140078, z: -0.0000000022011066, w: 0.9927187}
+  m_LocalRotation: {x: 0.12045592, y: -0.000000016563726, z: 0.0000000020098327, w: 0.9927187}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -991,7 +991,7 @@ GameObject:
   - component: {fileID: 1639996244}
   - component: {fileID: 1639996246}
   m_Layer: 0
-  m_Name: CM FreeLook1
+  m_Name: CM ThirdPerson
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1087,8 +1087,8 @@ MonoBehaviour:
   m_BindingMode: 5
   m_SplineCurvature: 0.2
   m_Orbits:
-  - m_Height: 10.46
-    m_Radius: 8.93
+  - m_Height: 10.95
+    m_Radius: 8.34
   - m_Height: 8.36
     m_Radius: 16.32
   - m_Height: 0.64
