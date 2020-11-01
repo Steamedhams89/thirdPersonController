@@ -21,9 +21,10 @@ public class PlayerController : MonoBehaviour
         Quaternion rotationToCam = Quaternion.LookRotation(projCamForward, Vector3.up); 
 
         moveDirection = rotationToCam * moveDirection;
-        Quaternion rotationToMoveDirection = Quaternion.LookRotation(moveDirection, Vector3.zero);
-        
-        
+        //Quaternion rotationToMoveDirection = Quaternion.LookRotation(moveDirection, Vector3.up);
+        Quaternion rotationToMoveDirection = (moveDirection == Vector3.zero) ? Quaternion.identity : Quaternion.LookRotation(moveDirection, Vector3.up);
+
+
         transform.rotation = Quaternion.RotateTowards(transform.rotation, rotationToMoveDirection, rotationSpeed * Time.deltaTime);
 
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
@@ -33,7 +34,7 @@ public class PlayerController : MonoBehaviour
     {
         this.vertical = vertical;
         this.horizontal = horizontal;
-        Debug.Log($"i farted {vertical}, {horizontal}");
+        Debug.Log($"input {vertical}, {horizontal}");
     }
 
 
